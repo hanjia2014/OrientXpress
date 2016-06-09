@@ -211,6 +211,7 @@
     <Content Include="images\ab2.jpg" />
     <Content Include="images\ab3.jpg" />
     <Content Include="images\ab4.jpg" />
+    <Content Include="images\cd_cover.jpg" />
     <Content Include="images\close.png" />
     <Content Include="images\cursor-img.png" />
     <Content Include="images\g1.jpg" />
@@ -225,6 +226,7 @@
     <Content Include="images\gro3.jpg" />
     <Content Include="images\gro4.jpg" />
     <Content Include="images\banner.jpg" />
+    <Content Include="images\group1.jpg" />
     <Content Include="images\icon.png" />
     <Content Include="images\img-sprite.png" />
     <Content Include="images\left.png" />
