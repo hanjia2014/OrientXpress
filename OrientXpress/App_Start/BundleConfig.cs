@@ -24,12 +24,14 @@ namespace OrientXpress
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/sitejs").Include(
-                "~/Scripts/site/easing.js",
                 "~/Scripts/site/jquery-1.11.0.min.js",
                 "~/Scripts/site/jquery.chocolat.js",
+                "~/Scripts/site/easing.js",
                 "~/Scripts/site/move-top.js",
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ng2").Include("~/Scripts/ng2/systemjs.config.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
