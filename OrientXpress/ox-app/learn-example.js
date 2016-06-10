@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var LearnExampleComponent = (function () {
+    function LearnExampleComponent() {
     }
-    AppComponent = __decorate([
+    LearnExampleComponent = __decorate([
         core_1.Component({
-            selector: 'ox-app',
-            templateUrl: "<h1>{{1+1}}</h1>"
+            selector: 'my-learn-example',
+            template: "\n        <div>{{1+1}}</div>\n            "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LearnExampleComponent);
+    return LearnExampleComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LearnExampleComponent = LearnExampleComponent;
+//# sourceMappingURL=learn-example.js.map

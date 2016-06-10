@@ -31,7 +31,7 @@ namespace OrientXpress
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/ng2").Include("~/Scripts/ng2/systemjs.config.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/ng2").Include("~/Scripts/ng2/systemjs.config.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

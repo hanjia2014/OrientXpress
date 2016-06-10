@@ -260,6 +260,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="ox-app\hero-list.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
@@ -278,7 +279,7 @@
     <Content Include="Scripts\site\jquery-1.11.0.min.js" />
     <Content Include="Scripts\site\jquery.chocolat.js" />
     <Content Include="Scripts\site\move-top.js" />
-    <Content Include="Scripts\site\ng2\systemjs.config.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -314,7 +315,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Scripts\site\ng2\tsconfig.json" />
+    <Content Include="ox-app\tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,8 +329,13 @@
     <Content Include="Scripts\jquery-2.2.3.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\site\ng2\app\app.component.ts" />
-    <TypeScriptCompile Include="Scripts\site\ng2\app\main.ts" />
+    <TypeScriptCompile Include="ox-app\app.component.ts" />
+    <TypeScriptCompile Include="ox-app\hero-detail.component.ts" />
+    <TypeScriptCompile Include="ox-app\hero.service.ts" />
+    <TypeScriptCompile Include="ox-app\Hero.ts" />
+    <TypeScriptCompile Include="ox-app\learn-example.ts" />
+    <TypeScriptCompile Include="ox-app\main.ts" />
+    <TypeScriptCompile Include="ox-app\mock-heroes.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
