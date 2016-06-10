@@ -6,7 +6,5 @@
 })
 export class AppComponent {
     
-    public constructor() {
-        
-    }
+    
 }

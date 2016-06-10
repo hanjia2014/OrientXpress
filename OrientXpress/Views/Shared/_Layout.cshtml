@@ -13,7 +13,19 @@
     <script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
     @Scripts.Render("~/bundles/ng2")
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+        System.config({
+            paths: {
+                'app/*': './scripts/site/ng2/app/*'
+            },
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+
+        System.import('app/main.js').catch(function (err) { console.error(err); });
     </script>
     <script type="text/javascript">
 			jQuery(document).ready(function($) {
