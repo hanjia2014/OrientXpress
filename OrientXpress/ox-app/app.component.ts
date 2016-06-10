@@ -6,6 +6,7 @@ import { HeroService } from './hero.service';
 
 @Component({
     selector: 'ox-app',
+    //template: `<h1>{{1+1}}</h1>`,
     templateUrl: `ox-app/hero-list.html`,
     styles: [`
     .hero-selected {
