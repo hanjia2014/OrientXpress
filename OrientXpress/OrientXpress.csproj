@@ -236,6 +236,7 @@
     <Content Include="images\icon.png" />
     <Content Include="images\img-sprite.png" />
     <Content Include="images\left.png" />
+    <Content Include="images\logo.jpg" />
     <Content Include="images\n1.jpg" />
     <Content Include="images\n2.jpg" />
     <Content Include="images\n3.jpg" />
@@ -246,7 +247,6 @@
     <Content Include="images\s4.jpg" />
     <Content Include="images\sing.jpg" />
     <Content Include="images\sprit.png" />
-    <Content Include="images\strip.jpg" />
     <Content Include="images\t1.jpg" />
     <Content Include="images\t2.jpg" />
     <Content Include="images\t3.jpg" />
@@ -260,6 +260,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="images\trip.jpg" />
     <Content Include="ox-app\hero-list.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

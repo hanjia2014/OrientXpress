@@ -310,7 +310,7 @@ span.glyphicon.glyphicon-music {
 /*--program end here--*/
 /*--strip start here--*/
 .music-strip {
-    background: url(../images/strip.jpg)no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/trip.jpg)no-repeat center;
     min-height: 275px;
     background-size: cover;
     padding: 3em 0em 3em 0em;
