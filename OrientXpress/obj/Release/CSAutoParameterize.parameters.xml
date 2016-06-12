@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\;AttachDbFilename=|DataDirectory|\OrientXpress.mdf;Initial Catalog=OrientXpress;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\OrientXpress\\OrientXpress\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AdminConnection-Web.config Connection String" description="AdminConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\;AttachDbFilename=|DataDirectory|\OXAdmin.mdf;Initial Catalog=OXAdmin;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\OrientXpress\\OrientXpress\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdminConnection']/@connectionString" />
+  </parameter>
+</parameters>

@@ -267,6 +267,8 @@
     <Content Include="Areas\Admin\Views\Events\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Events\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Events\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\orientxpress - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\orientxpress - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="images\trip.jpg" />
     <Content Include="ox-app\hero-list.html" />
