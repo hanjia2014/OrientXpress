@@ -1,4 +1,5 @@
 ﻿import {bootstrap} from '@angular/platform-browser-dynamic';
-import {Http} from '@angular/http';
+import {HTTP_BINDINGS} from '@angular/http';
 import {AppComponent} from './ox.app.component';
-bootstrap(AppComponent, [Http]);
+import 'rxjs/add/operator/map';
+bootstrap(AppComponent, [HTTP_BINDINGS]).catch((err: any) => console.error(err));
