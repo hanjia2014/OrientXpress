@@ -12,12 +12,22 @@ var core_1 = require('@angular/core');
 var event_service_1 = require('./event.service');
 var AppComponent = (function () {
     function AppComponent(eventService) {
+        var _this = this;
         this.eventService = eventService;
+        this.onSelect = function (event) {
+            _this.selectedEvent = event;
+        };
+        this.getEvents = function () {
+            _this.events = _this.eventService.getEvents();
+        };
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.getEvents();
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'ox-app',
-            template: "Hello",
+            templateUrl: "ox-app/event-summary.html",
             providers: [event_service_1.EventService]
         }), 
         __metadata('design:paramtypes', [event_service_1.EventService])
@@ -25,4 +35,4 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=app.component - Copy.js.map

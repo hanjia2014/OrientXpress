@@ -28,7 +28,7 @@ namespace OrientXpress.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             if (events == null)
             {
                 return HttpNotFound();
@@ -47,7 +47,7 @@ namespace OrientXpress.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Content,Date")] Events events)
+        public ActionResult Create([Bind(Include = "Id,Title,Content,Date")] Event events)
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +66,7 @@ namespace OrientXpress.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             if (events == null)
             {
                 return HttpNotFound();
@@ -79,7 +79,7 @@ namespace OrientXpress.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Content,Date")] Events events)
+        public ActionResult Edit([Bind(Include = "Id,Title,Content,Date")] Event events)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +97,7 @@ namespace OrientXpress.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             if (events == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace OrientXpress.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             db.Events.Remove(events);
             db.SaveChanges();
             return RedirectToAction("Index");

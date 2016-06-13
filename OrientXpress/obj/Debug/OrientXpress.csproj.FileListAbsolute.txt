@@ -86,4 +86,3 @@ C:\Projects\OrientXpress\OrientXpress\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Projects\OrientXpress\OrientXpress\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Projects\OrientXpress\OrientXpress\obj\Debug\OrientXpress.dll
 C:\Projects\OrientXpress\OrientXpress\obj\Debug\OrientXpress.pdb
-C:\Projects\OrientXpress\OrientXpress\obj\Debug\OrientXpress.csprojResolveAssemblyReference.cache

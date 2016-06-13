@@ -15,7 +15,7 @@ namespace OrientXpress.Models
         public DbSet<Music> Musics { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Video> Videos { get; set; }
-        public DbSet<Events> Events { get; set; }
+        public DbSet<Event> Events { get; set; }
 
         public OXDataContext() : base("DefaultConnection")
         {

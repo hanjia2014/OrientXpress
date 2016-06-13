@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using OrientXpress.Models;
@@ -17,16 +13,16 @@ namespace OrientXpress.Controllers
         private OXDataContext db = new OXDataContext();
 
         // GET: api/Events
-        public IQueryable<Events> GetEvents()
+        public IQueryable<Event> GetEvents()
         {
             return db.Events;
         }
 
         // GET: api/Events/5
-        [ResponseType(typeof(Events))]
+        [ResponseType(typeof(Event))]
         public IHttpActionResult GetEvents(int id)
         {
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             if (events == null)
             {
                 return NotFound();
@@ -37,7 +33,7 @@ namespace OrientXpress.Controllers
 
         // PUT: api/Events/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutEvents(int id, Events events)
+        public IHttpActionResult PutEvents(int id, Event events)
         {
             if (!ModelState.IsValid)
             {
@@ -71,8 +67,8 @@ namespace OrientXpress.Controllers
         }
 
         // POST: api/Events
-        [ResponseType(typeof(Events))]
-        public IHttpActionResult PostEvents(Events events)
+        [ResponseType(typeof(Event))]
+        public IHttpActionResult PostEvents(Event events)
         {
             if (!ModelState.IsValid)
             {
@@ -101,10 +97,10 @@ namespace OrientXpress.Controllers
         }
 
         // DELETE: api/Events/5
-        [ResponseType(typeof(Events))]
+        [ResponseType(typeof(Event))]
         public IHttpActionResult DeleteEvents(int id)
         {
-            Events events = db.Events.Find(id);
+            Event events = db.Events.Find(id);
             if (events == null)
             {
                 return NotFound();
