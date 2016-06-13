@@ -14,7 +14,7 @@ export class AppComponent {
         this.selectedEvent = event;
     }
     getEvents = () => {
-        //this.events = this.eventService.getEvents();
+        this.events = this.eventService.getEvents();
     }
     ngOnInit() {
         this.getEvents();
