@@ -1,0 +1,1 @@
+{"version":3,"file":"customerDetail.js","sourceRoot":"","sources":["customerDetail.ts"],"names":[],"mappings":";;;;;;;;;;AAAC,yBAAqD,mBACtD,CAAC,CADwE;AACzE,gCAAuB,mBAAmB,CAAC,CAAA;AA6B3C;IAAA;IAGA,CAAC;IAFG;QAAC,gBAAK,EAAE;;oDAAA;IA5BZ;QAAC,oBAAS,CAAC;YACP,QAAQ,EAAE,iBAAiB;YAC3B,QAAQ,EAAE,26BAuBX;SACF,CAAC;;sBAAA;IAIF,qBAAC;AAAD,CAAC,AAHD,IAGC;AAHY,sBAAc,iBAG1B,CAAA"}

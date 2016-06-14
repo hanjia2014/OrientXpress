@@ -12,19 +12,19 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var event_1 = require('./event');
 var EventService = (function () {
-    function EventService(http) {
+    function EventService(http, events) {
         var _this = this;
         this.http = http;
-        this.eventsUrl = 'http://localhost:30712/api/events';
+        this.events = events;
+        this.eventsUrl = '~/api/events';
         this.getEvents = function () {
             _this.events = _this.http.get(_this.eventsUrl).map(function (res) { return res.json(); }).map(function (rawEvents) { return rawEvents.map(event_1.Event.create); });
             return _this.events;
         };
-        this.getEvents();
     }
     EventService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, Array])
     ], EventService);
     return EventService;
     var _a;

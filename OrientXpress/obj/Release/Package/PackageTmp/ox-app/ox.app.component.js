@@ -9,25 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-var event_1 = require('./event');
-var EventService = (function () {
-    function EventService(http) {
+var event_service_1 = require('./event.service');
+var AppComponent = (function () {
+    function AppComponent(eventService) {
         var _this = this;
-        this.http = http;
-        this.eventsUrl = 'http://localhost:30712/api/events';
-        this.getEvents = function () {
-            _this.events = _this.http.get(_this.eventsUrl).map(function (res) { return res.json(); }).map(function (rawEvents) { return rawEvents.map(event_1.Event.create); });
-            return _this.events;
+        this.eventService = eventService;
+        this.onSelect = function (event) {
+            _this.selectedEvent = event;
         };
-        this.getEvents();
+        this.getEvents = function () {
+            _this.events = _this.eventService.getEvents();
+        };
     }
-    EventService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-    ], EventService);
-    return EventService;
-    var _a;
+    AppComponent.prototype.ngOnInit = function () {
+        this.getEvents();
+    };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'ox-app',
+            templateUrl: "ox-app/event-summary.html",
+            providers: [event_service_1.EventService]
+        }), 
+        __metadata('design:paramtypes', [event_service_1.EventService])
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.EventService = EventService;
-//# sourceMappingURL=event.service.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=ox.app.component.js.map

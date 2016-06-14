@@ -40,9 +40,10 @@ var AppComponent = (function () {
             directives: [hero_detail_component_1.HeroDetailComponent, learn_example_1.LearnExampleComponent],
             providers: [hero_service_1.HeroService]
         }), 
-        __metadata('design:paramtypes', [hero_service_1.HeroService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof hero_service_1.HeroService !== 'undefined' && hero_service_1.HeroService) === 'function' && _a) || Object])
     ], AppComponent);
     return AppComponent;
+    var _a;
 }());
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
