@@ -22,7 +22,7 @@
     var packages = {
         'app': { main: 'main.ts', defaultExtension: 'ts' },
         'rxjs': { defaultExtension: 'js' },
-        'angular2-in-memory-web-api': { defaultExtension: 'js' },
+        'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
     };
 
     var ngPackageNames = [
@@ -71,3 +71,10 @@
     System.config(config);
 
 })(this);
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

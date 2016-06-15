@@ -1,4 +1,5 @@
 ﻿import { Component } from '@angular/core';
+import './rxjs-operators';
 import {Event} from "./event";
 import { EventService } from './event.service';
 
