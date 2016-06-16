@@ -1,12 +1,14 @@
 ﻿import { Component } from '@angular/core';
 import './rxjs-operators';
 import {Event} from "./event";
+import { WikiComponent }      from './wiki/wiki.component';
 import { EventService } from './event.service';
 
 @Component({
     selector: 'ox-app',
     templateUrl: `ox-app/event-summary.html`,
-    providers: [EventService]
+    providers: [EventService],
+    directives: [WikiComponent]
 })
 export class AppComponent {
     events: Event[];

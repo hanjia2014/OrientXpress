@@ -14,10 +14,11 @@ var Observable_1 = require('rxjs/Observable');
 var EventService = (function () {
     function EventService(http) {
         this.http = http;
-        this.eventsUrl = 'http://localhost:30712/api/events';
+        this.eventsUrl = '/api/events';
     }
     EventService.prototype.getEvents = function () {
-        return this.http.get("ox-app/events.json").map(this.extractData).catch(this.handleError);
+        var results = this.http.get(this.eventsUrl).map(this.extractData).catch(this.handleError);
+        return results.map(this.extractData);
     };
     EventService.prototype.extractData = function (res) {
         var body = res.json();

@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 require('./rxjs-operators');
+var wiki_component_1 = require('./wiki/wiki.component');
 var event_service_1 = require('./event.service');
 var AppComponent = (function () {
     function AppComponent(eventService) {
@@ -29,7 +30,8 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'ox-app',
             templateUrl: "ox-app/event-summary.html",
-            providers: [event_service_1.EventService]
+            providers: [event_service_1.EventService],
+            directives: [wiki_component_1.WikiComponent]
         }), 
         __metadata('design:paramtypes', [event_service_1.EventService])
     ], AppComponent);
