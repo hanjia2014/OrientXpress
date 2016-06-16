@@ -5,7 +5,7 @@
  */
 (function (global) {
 
-    var ngVer = '@2.0.0-rc.1'; // lock in the angular package version; do not let it float to current!
+    var ngVer = '@2.0.0-rc.2'; // lock in the angular package version; do not let it float to current!
 
     //map tells the System loader where to look for things
     var map = {
@@ -47,7 +47,7 @@
     ngPackageNames.forEach(function (pkgName) {
 
         // Bundled (~40 requests):
-        packages['@angular/' + pkgName] = { main: pkgName + '.umd.js', defaultExtension: 'js' };
+        packages['@angular/' + pkgName] = { main: '/bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
 
         // Individual files (~300 requests):
         //packages['@angular/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };
@@ -66,15 +66,8 @@
         },
         map: map,
         packages: packages
-    }
+    };
 
     System.config(config);
 
 })(this);
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

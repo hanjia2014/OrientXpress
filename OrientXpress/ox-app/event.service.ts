@@ -5,12 +5,13 @@ import { Event } from './event';
 
 @Injectable()
 export class EventService {
-    eventsUrl: string = 'http://localhost:30712/api/events';
+    eventsUrl: string = '/api/events';
     private events: Event[];
     constructor(private http: Http) {
     }
     getEvents(): Observable<Event[]> {
-        return this.http.get("ox-app/events.json").map(this.extractData).catch(this.handleError);
+        var results = this.http.get(this.eventsUrl).map(this.extractData).catch(this.handleError);
+        return results.map(this.extractData);
     }
 
     private extractData(res: Response) {
