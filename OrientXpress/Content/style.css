@@ -17,6 +17,10 @@ p {
     margin: 0;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 html, body {
     font-family: 'Roboto-Regular';
     font-size: 100%;

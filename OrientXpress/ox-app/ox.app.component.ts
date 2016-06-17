@@ -11,7 +11,6 @@ import { EventService } from './event.service';
 })
 export class AppComponent {
     events: Observable<Event[]>;
-    list: Observable<string[]>;
     private error: any;
     selectedEvent: Event;
     onSelect = (event: Event) => {
