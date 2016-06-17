@@ -2,15 +2,12 @@
 import './rxjs-operators';
 import {Event} from "./event";
 import { Observable }       from 'rxjs/Observable';
-import { WikiComponent }      from './wiki/wiki.component';
 import { EventService } from './event.service';
-import { JSONP_PROVIDERS }  from '@angular/http';
 
 @Component({
     selector: 'ox-app',
     templateUrl: `ox-app/event-summary.html`,
-    providers: [JSONP_PROVIDERS, EventService],
-    directives: [WikiComponent]
+    providers: [EventService]
 })
 export class AppComponent {
     events: Observable<Event[]>;
@@ -21,7 +18,6 @@ export class AppComponent {
     }
     getEvents = () => {
         this.events = this.eventService.getEvents();
-        //this.list = this.eventService.getList();
     }
     ngOnInit() {
         this.getEvents();
