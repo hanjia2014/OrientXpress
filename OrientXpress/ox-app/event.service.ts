@@ -1,17 +1,16 @@
 ﻿import { Injectable } from '@angular/core';
-import {Http, Response} from '@angular/http';
+import {Http, Response, Jsonp} from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import { Event } from './event';
 
 @Injectable()
 export class EventService {
-    eventsUrl: string = '/api/events';
+    eventsUrl: string = 'http://localhost:30712/api/events';
     private events: Event[];
-    constructor(private http: Http) {
+    constructor(private http: Http, private jsonp: Jsonp) {
     }
     getEvents(): Observable<Event[]> {
-        var results = this.http.get(this.eventsUrl).map(this.extractData).catch(this.handleError);
-        return results.map(this.extractData);
+        return this.jsonp.get(this.eventsUrl).map(request => <Event[]>request.json()[1]);
     }
 
     private extractData(res: Response) {

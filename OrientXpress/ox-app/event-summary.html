@@ -1,4 +1,7 @@
 ﻿<my-wiki></my-wiki>
+<ul>
+    <li *ngFor="let event of events | async">test -- {{event.title}}</li>
+</ul>
 <!--feature start here-->
 <div class="feature">
     <div class="container">
