@@ -1,16 +1,32 @@
 ﻿import { Injectable } from '@angular/core';
-import {Http, Response, Jsonp} from '@angular/http';
+import {Http, Response, Jsonp, URLSearchParams} from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import { Event } from './event';
 
 @Injectable()
 export class EventService {
-    eventsUrl: string = 'http://localhost:30712/api/events';
+    eventsUrl: string = 'api/events';
     private events: Event[];
     constructor(private http: Http, private jsonp: Jsonp) {
     }
     getEvents(): Observable<Event[]> {
-        return this.jsonp.get(this.eventsUrl).map(request => <Event[]>request.json()[1]);
+        let params = new URLSearchParams();
+        params.set('format', 'json');
+        params.set('callback', 'JSONP_CALLBACK');
+
+        this.http.get(this.eventsUrl).map((res: Response) => {
+            if (res.status != 200) {
+                throw new Error('No comments to retrieve! code status ' + res.status);
+            } else {
+                return res.json();
+            }
+        }).subscribe(
+            (data: Event[]) => { return data; },
+            (err) => this.error = err);
+    }
+
+    getList(): Observable<string[]> {
+        return this.jsonp.get('http://localhost:30712/api/list').map(request => <string[]>request.json()[1]);
     }
 
     private extractData(res: Response) {

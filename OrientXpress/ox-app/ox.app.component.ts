@@ -14,12 +14,14 @@ import { JSONP_PROVIDERS }  from '@angular/http';
 })
 export class AppComponent {
     events: Observable<Event[]>;
+    list: Observable<string[]>;
     selectedEvent: Event;
     onSelect = (event: Event) => {
         this.selectedEvent = event;
     }
     getEvents = () => {
         this.events = this.eventService.getEvents();
+        //this.list = this.eventService.getList();
     }
     ngOnInit() {
         this.getEvents();
