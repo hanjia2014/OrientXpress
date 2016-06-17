@@ -12,12 +12,15 @@ import { EventService } from './event.service';
 export class AppComponent {
     events: Observable<Event[]>;
     list: Observable<string[]>;
+    private error: any;
     selectedEvent: Event;
     onSelect = (event: Event) => {
         this.selectedEvent = event;
     }
     getEvents = () => {
-        this.events = this.eventService.getEvents();
+        this.eventService.getEvents().subscribe(
+            (data: Event[]) => { this.events = data; },
+            (err: any) => this.error = err);
     }
     ngOnInit() {
         this.getEvents();
