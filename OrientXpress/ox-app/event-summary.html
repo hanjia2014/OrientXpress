@@ -1,28 +1,13 @@
-﻿<ul>
-    <li *ngFor="let event of events">test -- {{event.Title}}</li>
-</ul>
-<!--feature start here-->
+﻿<!--feature start here-->
 <div class="feature">
     <div class="container">
         <div class="features-main">
             <h3>Feature Events</h3>
             <div class="fea-grid-bottom">
-                <div class="col-md-4 fea-grid">
-                    <h5>4-08-2015</h5>
-                    <h4> Nam libero tempore soluta nobis</h4>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual</p>
-                    <a href="single.html">Read More</a>
-                </div>
-                <div class="col-md-4 fea-grid">
-                    <h5>7-08-2015</h5>
-                    <h4> Nam libero tempore soluta nobis</h4>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual</p>
-                    <a href="single.html">Read More</a>
-                </div>
-                <div class="col-md-4 fea-grid">
-                    <h5>12-08-2015</h5>
-                    <h4> Nam libero tempore soluta nobis</h4>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual</p>
+                <div class="col-md-4 fea-grid" *ngFor="let event of events">
+                    <h5>{{event.Date | date : 'yyyy-MMM-dd'}}</h5>
+                    <h4>{{event.Title}}</h4>
+                    <p>{{event.Content}}</p>
                     <a href="single.html">Read More</a>
                 </div>
                 <div class="clearfix"> </div>
