@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 require('./rxjs-operators');
-var wiki_component_1 = require('./wiki/wiki.component');
 var event_service_1 = require('./event.service');
 var AppComponent = (function () {
     function AppComponent(eventService) {
@@ -20,18 +19,30 @@ var AppComponent = (function () {
             _this.selectedEvent = event;
         };
         this.getEvents = function () {
-            _this.events = _this.eventService.getEvents();
+            _this.eventService.getEvents().subscribe(function (data) {
+                _this.events = data;
+                _this.events.forEach(function (event) {
+                    _this.truncateContent(event);
+                });
+            }, function (err) { return _this.error = err; });
         };
     }
     AppComponent.prototype.ngOnInit = function () {
         this.getEvents();
     };
+    AppComponent.prototype.truncateContent = function (event) {
+        var maxLength = 100;
+        //trim the string to the maximum length
+        var trimmedString = event.Content.substr(0, maxLength);
+        //re-trim if we are in the middle of a word
+        trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
+        event.Truncate = trimmedString + "...";
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'ox-app',
             templateUrl: "ox-app/event-summary.html",
-            providers: [event_service_1.EventService],
-            directives: [wiki_component_1.WikiComponent]
+            providers: [event_service_1.EventService]
         }), 
         __metadata('design:paramtypes', [event_service_1.EventService])
     ], AppComponent);

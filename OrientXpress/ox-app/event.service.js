@@ -10,27 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
-var Observable_1 = require('rxjs/Observable');
 var EventService = (function () {
     function EventService(http) {
         this.http = http;
-        this.eventsUrl = '/api/events';
+        this.eventsUrl = 'api/events';
     }
     EventService.prototype.getEvents = function () {
-        var results = this.http.get(this.eventsUrl).map(this.extractData).catch(this.handleError);
-        return results.map(this.extractData);
-    };
-    EventService.prototype.extractData = function (res) {
-        var body = res.json();
-        return body.data || {};
-    };
-    EventService.prototype.handleError = function (error) {
-        // In a real world app, we might use a remote logging infrastructure
-        // We'd also dig deeper into the error to get a better message
-        var errMsg = (error.message) ? error.message :
-            error.status ? error.status + " - " + error.statusText : 'Server error';
-        console.error(errMsg); // log to console instead
-        return Observable_1.Observable.throw(errMsg);
+        return this.http.get(this.eventsUrl).map(function (res) {
+            if (res.status != 200) {
+                throw new Error('No objects to retrieve! code status ' + res.status);
+            }
+            else {
+                return res.json();
+            }
+        });
     };
     EventService = __decorate([
         core_1.Injectable(), 
