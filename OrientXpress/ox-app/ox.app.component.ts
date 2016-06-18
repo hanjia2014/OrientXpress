@@ -18,12 +18,27 @@ export class AppComponent {
     }
     getEvents = () => {
         this.eventService.getEvents().subscribe(
-            (data: Event[]) => { this.events = data; },
+            (data: Event[]) => {
+                this.events = data;
+                this.events.forEach((event: Event) => {
+                    this.truncateContent(event);
+                });
+            },
             (err: any) => this.error = err);
     }
     ngOnInit() {
         this.getEvents();
     }
+
+    truncateContent(event: Event) {
+        var maxLength = 100;
+        //trim the string to the maximum length
+        var trimmedString = event.Content.substr(0, maxLength);
+        //re-trim if we are in the middle of a word
+        trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
+        event.Truncate = trimmedString + "...";
+    }
+
     public constructor(private eventService: EventService) {
         
     }
