@@ -1,14 +1,21 @@
 ﻿import { Component } from '@angular/core';
+import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
 import './rxjs-operators';
 import {Event} from "./event";
 import { Observable }       from 'rxjs/Observable';
 import { EventService } from './event.service';
+import {EventDetail} from './event-detail.component';
 
 @Component({
     selector: 'ox-app',
     templateUrl: `ox-app/event-summary.html`,
-    providers: [EventService]
+    providers: [EventService],
+    directives: [ROUTER_DIRECTIVES]
 })
+@Routes([
+    { path: '/eventdetail/:id', component: EventDetail }
+])
+
 export class AppComponent {
     events: Observable<Event[]>;
     private error: any;
