@@ -182,6 +182,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\EventsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MusiciansController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -323,6 +324,11 @@
     <Content Include="template\single.html" />
     <Content Include="template\typo.html" />
     <Content Include="template\w3layouts-license.txt" />
+    <Content Include="Areas\Admin\Views\Musicians\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Musicians\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Musicians\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Musicians\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Musicians\Index.cshtml" />
     <None Include="Properties\PublishProfiles\orientxpress - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\orientxpress - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
