@@ -183,6 +183,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\EventsController.cs" />
     <Compile Include="Areas\Admin\Controllers\MusiciansController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhotosController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -195,6 +196,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\FileHelper.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -213,6 +215,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chocolat.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -271,6 +274,10 @@
     <Content Include="Areas\Admin\Views\Events\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Events\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Events\Index.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="template\about.html" />
     <Content Include="template\contact.html" />
     <Content Include="template\css\bootstrap.css" />
@@ -329,8 +336,16 @@
     <Content Include="Areas\Admin\Views\Musicians\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Musicians\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Musicians\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Photos\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Photos\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Photos\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Photos\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Photos\Index.cshtml" />
     <None Include="Properties\PublishProfiles\orientxpress - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\orientxpress - Web Deploy.pubxml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="images\trip.jpg" />
     <Content Include="ox-app\event-detail.html" />
@@ -401,7 +416,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

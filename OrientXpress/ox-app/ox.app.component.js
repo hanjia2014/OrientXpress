@@ -9,8 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 require('./rxjs-operators');
 var event_service_1 = require('./event.service');
+var event_detail_component_1 = require('./event-detail.component');
 var AppComponent = (function () {
     function AppComponent(eventService) {
         var _this = this;
@@ -42,8 +44,12 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'ox-app',
             templateUrl: "ox-app/event-summary.html",
-            providers: [event_service_1.EventService]
-        }), 
+            providers: [event_service_1.EventService],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }),
+        router_1.Routes([
+            { path: '/eventdetail/:id', component: event_detail_component_1.EventDetail }
+        ]), 
         __metadata('design:paramtypes', [event_service_1.EventService])
     ], AppComponent);
     return AppComponent;
