@@ -17,16 +17,19 @@
         System.import('app').catch(function (err) { console.error(err); });
     </script>
     <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
     </script>
+    @{
+        var bannerCls = ViewBag.Title == "Home Page" ? "banner" : "banner-two";
+    }
 </head>
 <body>
-    <div class="banner">
+    <div class="@bannerCls">
         <div class="container">
             <div class="header">
                 <div class="logo">
@@ -42,22 +45,25 @@
                     </ul>
                     <!-- script-for-menu -->
                     <script>
-						   $( "span.menu" ).click(function() {
-							 $( "ul.res" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
+                        $("span.menu").click(function () {
+                            $("ul.res").slideToggle(300, function () {
+                                // Animation complete.
+                            });
+                        });
                     </script>
                     <!-- /script-for-menu -->
                 </div>
                 <div class="clearfix"> </div>
             </div>
-            <div class="banner-main">
-                <div class="bann-text">
-                    <h3>IT'S NICE TO MEET YOU</h3>
-                    <a href="#">Click Here</a>
+            @if (ViewBag.Title == "Home Page")
+            {
+                <div class="banner-main">
+                    <div class="bann-text">
+                        <h3>IT'S NICE TO MEET YOU</h3>
+                        <a href="#">Click Here</a>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     </div>
 
@@ -90,18 +96,18 @@
                         </ul>
                     </div>
                     <script type="text/javascript">
-										$(document).ready(function() {
-											/*
-											var defaults = {
-									  			containerID: 'toTop', // fading element id
-												containerHoverID: 'toTopHover', // fading element hover id
-												scrollSpeed: 1200,
-												easingType: 'linear'
-									 		};
-											
-											$().UItoTop({ easingType: 'easeOutQuart' });
-                                            */
-										});
+                        $(document).ready(function () {
+                            /*
+                            var defaults = {
+                                containerID: 'toTop', // fading element id
+                                containerHoverID: 'toTopHover', // fading element hover id
+                                scrollSpeed: 1200,
+                                easingType: 'linear'
+                            };
+
+                            $().UItoTop({ easingType: 'easeOutQuart' });
+                            */
+                        });
                     </script>
                     @*<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>*@
                 </div>

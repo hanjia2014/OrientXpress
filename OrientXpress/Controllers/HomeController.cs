@@ -22,6 +22,20 @@ namespace OrientXpress.Controllers
             }
         }
 
+        public List<Photo> Photos
+        {
+            get
+            {
+                var photos = new List<Photo>();
+                foreach (var photo in db.Photos)
+                {
+                    photos.Add(new Photo { Id = photo.Id, Date = photo.Date, Title = photo.Title, Description = photo.Description, Image = photo.Image });
+                }
+
+                return photos;
+            }
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -39,6 +53,11 @@ namespace OrientXpress.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            return View(Photos);
         }
     }
 }

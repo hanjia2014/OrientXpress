@@ -412,6 +412,7 @@
     <Content Include="template\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="template\fonts\JockeyOne-Regular.ttf" />
     <Content Include="template\fonts\Roboto-Regular.ttf" />
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
