@@ -432,6 +432,7 @@
     <TypeScriptCompile Include="ox-app\Event.ts" />
     <TypeScriptCompile Include="ox-app\event.service.ts" />
     <TypeScriptCompile Include="ox-app\main.ts" />
+    <TypeScriptCompile Include="ox-app\ox.app.routes.ts" />
     <TypeScriptCompile Include="ox-app\rxjs-operators.ts" />
   </ItemGroup>
   <ItemGroup>
