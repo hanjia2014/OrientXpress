@@ -2,6 +2,12 @@
 
 @{
     ViewBag.Title = "Gallery";
+    int numOfCols = 3; // You can change the number of columns here
+    int numOfRows = Model.Count() / numOfCols;
+    if (Model.Count() % numOfCols != 0)
+    {
+        numOfRows++;
+    }
 }
 
 <!--banner start here-->
@@ -18,60 +24,30 @@
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti corrupti dolores et quas </p>
             </div>
             <div class="gallery-bottom">
-                <div class="gallery-1">
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g1.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g1.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
+                @for (int row = 0; row < numOfRows; row++)
+                {
+                    <div class="gallery-@(row + 1)">
+                        @for (int col = 0; col < numOfCols; col++)
+                        {
+                            int index = row * numOfCols + col;
+                            if (index < Model.Count())
+                            {
+                                var item = Model.ElementAt(index);
+                                <div class="col-md-4 gallery-left">
+                                    <a href="@item.ConvertImageString()" rel="title" class="mask">
+                                        <img src="@item.ConvertImageString()" height="200" alt="" class="img-responsive zoom-img">
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                
+                            }
+                        }
+
+                        <div class="clearfix"> </div>
                     </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g2.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g2.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g3.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g3.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="gallery-2">
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g4.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g4.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g5.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g5.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g6.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g6.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="gallery-2">
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g7.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g7.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g8.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g8.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-left">
-                        <a href="~/template/images/g9.jpg" rel="title" class="mask">
-                            <img src="~/template/images/g9.jpg" alt="" class="img-responsive zoom-img">
-                        </a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+                }
             </div>
 
         </div>
@@ -79,11 +55,8 @@
 </div>
 <!--gallery  end here-->
 <!--light-box-files -->
-<script src="~/Scripts/site/jquery.chocolat.js"></script>
-<link href="~/Content/chocolat.css" rel="stylesheet" />
-<!--light-box-files -->
 <script type="text/javascript" charset="utf-8">
-		$(function() {
-			$('.gallery-bottom a').Chocolat();
-		});
+    $(function () {
+        $('.gallery-bottom a').Chocolat();
+    });
 </script>
