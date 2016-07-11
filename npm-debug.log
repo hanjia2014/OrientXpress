@@ -1,0 +1,380 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '@angular/core',
+1 verbose cli   '@angular/compiler',
+1 verbose cli   '@angular/common',
+1 verbose cli   '@angular/platform-browser',
+1 verbose cli   '@angular/platform-browser-dynamic',
+1 verbose cli   'rxjs@5.0.0-beta.6',
+1 verbose cli   'zone.js@0.6.12' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @angular/core
+8 silly fetchPackageMetaData @angular/compiler
+9 silly fetchPackageMetaData @angular/common
+10 silly fetchPackageMetaData @angular/platform-browser
+11 silly fetchPackageMetaData @angular/platform-browser-dynamic
+12 silly fetchPackageMetaData rxjs@5.0.0-beta.6
+13 silly fetchPackageMetaData zone.js@0.6.12
+14 silly fetchNamedPackageData rxjs
+15 silly mapToRegistry name rxjs
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'rxjs',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   escapedName: 'rxjs',
+18 silly mapToRegistry   name: 'rxjs',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+20 silly fetchNamedPackageData zone.js
+21 silly mapToRegistry name zone.js
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'zone.js',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   escapedName: 'zone.js',
+24 silly mapToRegistry   name: 'zone.js',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+26 silly fetchNamedPackageData @angular/core
+27 silly mapToRegistry name @angular/core
+28 silly mapToRegistry scope (from package name) @angular
+29 verbose mapToRegistry no registry URL found in name for scope @angular
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@angular/core',
+32 silly mapToRegistry   scope: '@angular',
+32 silly mapToRegistry   escapedName: '@angular%2fcore',
+32 silly mapToRegistry   name: '@angular/core',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcore
+34 silly fetchNamedPackageData @angular/compiler
+35 silly mapToRegistry name @angular/compiler
+36 silly mapToRegistry scope (from package name) @angular
+37 verbose mapToRegistry no registry URL found in name for scope @angular
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry data Result {
+40 silly mapToRegistry   raw: '@angular/compiler',
+40 silly mapToRegistry   scope: '@angular',
+40 silly mapToRegistry   escapedName: '@angular%2fcompiler',
+40 silly mapToRegistry   name: '@angular/compiler',
+40 silly mapToRegistry   rawSpec: '',
+40 silly mapToRegistry   spec: 'latest',
+40 silly mapToRegistry   type: 'tag' }
+41 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcompiler
+42 silly fetchNamedPackageData @angular/common
+43 silly mapToRegistry name @angular/common
+44 silly mapToRegistry scope (from package name) @angular
+45 verbose mapToRegistry no registry URL found in name for scope @angular
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: '@angular/common',
+48 silly mapToRegistry   scope: '@angular',
+48 silly mapToRegistry   escapedName: '@angular%2fcommon',
+48 silly mapToRegistry   name: '@angular/common',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcommon
+50 silly fetchNamedPackageData @angular/platform-browser
+51 silly mapToRegistry name @angular/platform-browser
+52 silly mapToRegistry scope (from package name) @angular
+53 verbose mapToRegistry no registry URL found in name for scope @angular
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: '@angular/platform-browser',
+56 silly mapToRegistry   scope: '@angular',
+56 silly mapToRegistry   escapedName: '@angular%2fplatform-browser',
+56 silly mapToRegistry   name: '@angular/platform-browser',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser
+58 silly fetchNamedPackageData @angular/platform-browser-dynamic
+59 silly mapToRegistry name @angular/platform-browser-dynamic
+60 silly mapToRegistry scope (from package name) @angular
+61 verbose mapToRegistry no registry URL found in name for scope @angular
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: '@angular/platform-browser-dynamic',
+64 silly mapToRegistry   scope: '@angular',
+64 silly mapToRegistry   escapedName: '@angular%2fplatform-browser-dynamic',
+64 silly mapToRegistry   name: '@angular/platform-browser-dynamic',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+66 verbose request uri https://registry.npmjs.org/rxjs
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 5:49:00 PM
+69 verbose request id 1753c14573bb774b
+70 http request GET https://registry.npmjs.org/rxjs
+71 verbose request uri https://registry.npmjs.org/zone.js
+72 verbose request no auth needed
+73 info attempt registry request try #1 at 5:49:00 PM
+74 http request GET https://registry.npmjs.org/zone.js
+75 verbose request uri https://registry.npmjs.org/@angular%2fcore
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 5:49:00 PM
+78 http request GET https://registry.npmjs.org/@angular%2fcore
+79 verbose request uri https://registry.npmjs.org/@angular%2fcompiler
+80 verbose request no auth needed
+81 info attempt registry request try #1 at 5:49:00 PM
+82 http request GET https://registry.npmjs.org/@angular%2fcompiler
+83 verbose request uri https://registry.npmjs.org/@angular%2fcommon
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 5:49:00 PM
+86 http request GET https://registry.npmjs.org/@angular%2fcommon
+87 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser
+88 verbose request no auth needed
+89 info attempt registry request try #1 at 5:49:00 PM
+90 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+91 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 5:49:00 PM
+94 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+95 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+96 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+97 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+98 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+99 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+100 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+101 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+102 info attempt registry request try #2 at 5:49:10 PM
+103 http request GET https://registry.npmjs.org/zone.js
+104 info attempt registry request try #2 at 5:49:10 PM
+105 http request GET https://registry.npmjs.org/@angular%2fcompiler
+106 info attempt registry request try #2 at 5:49:10 PM
+107 http request GET https://registry.npmjs.org/@angular%2fcore
+108 info attempt registry request try #2 at 5:49:10 PM
+109 http request GET https://registry.npmjs.org/rxjs
+110 info attempt registry request try #2 at 5:49:10 PM
+111 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+112 info attempt registry request try #2 at 5:49:10 PM
+113 http request GET https://registry.npmjs.org/@angular%2fcommon
+114 info attempt registry request try #2 at 5:49:10 PM
+115 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+116 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+117 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+118 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+119 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+120 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+121 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+122 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
+123 info attempt registry request try #3 at 5:50:10 PM
+124 http request GET https://registry.npmjs.org/zone.js
+125 info attempt registry request try #3 at 5:50:10 PM
+126 http request GET https://registry.npmjs.org/@angular%2fcompiler
+127 info attempt registry request try #3 at 5:50:10 PM
+128 http request GET https://registry.npmjs.org/@angular%2fcore
+129 info attempt registry request try #3 at 5:50:10 PM
+130 http request GET https://registry.npmjs.org/rxjs
+131 info attempt registry request try #3 at 5:50:10 PM
+132 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+133 info attempt registry request try #3 at 5:50:10 PM
+134 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+135 info attempt registry request try #3 at 5:50:10 PM
+136 http request GET https://registry.npmjs.org/@angular%2fcommon
+137 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+137 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+137 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+137 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+137 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+137 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+137 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+137 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+137 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+137 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+137 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+137 silly fetchPackageMetaData  error for zone.js@0.6.12 { Error: tunneling socket could not be established, statusCode=407
+137 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+137 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+137 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+137 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+137 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+137 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+137 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+137 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+137 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+137 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+138 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+138 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+138 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+138 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+138 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+138 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+138 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+138 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+138 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+138 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+138 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+138 silly fetchPackageMetaData  error for @angular/compiler { Error: tunneling socket could not be established, statusCode=407
+138 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+138 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+138 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+138 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+138 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+138 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+138 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+138 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+138 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+138 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+139 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+139 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+139 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+139 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+139 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+139 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+139 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+139 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+139 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+139 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+139 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+139 silly fetchPackageMetaData  error for @angular/core { Error: tunneling socket could not be established, statusCode=407
+139 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+139 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+139 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+139 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+139 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+139 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+139 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+139 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+139 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+139 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+140 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+140 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+140 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+140 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+140 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+140 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+140 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+140 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+140 silly fetchPackageMetaData  error for rxjs@5.0.0-beta.6 { Error: tunneling socket could not be established, statusCode=407
+140 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+140 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+140 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+140 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+140 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+140 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+140 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+141 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+141 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+141 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+141 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+141 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+141 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+141 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+141 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+141 silly fetchPackageMetaData  error for @angular/platform-browser { Error: tunneling socket could not be established, statusCode=407
+141 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+141 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+141 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+141 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+141 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+141 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+141 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+142 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+142 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+142 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+142 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+142 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+142 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+142 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+142 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+142 silly fetchPackageMetaData  error for @angular/common { Error: tunneling socket could not be established, statusCode=407
+142 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+142 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+142 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+142 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+142 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+142 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+142 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+143 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
+143 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+143 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+143 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+143 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+143 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+143 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+143 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+143 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+143 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+143 silly fetchPackageMetaData     at TCP.onread (net.js:542:20)
+143 silly fetchPackageMetaData  error for @angular/platform-browser-dynamic { Error: tunneling socket could not be established, statusCode=407
+143 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+143 silly fetchPackageMetaData     at ClientRequest.g (events.js:286:16)
+143 silly fetchPackageMetaData     at emitThree (events.js:116:13)
+143 silly fetchPackageMetaData     at ClientRequest.emit (events.js:194:7)
+143 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:393:11)
+143 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+143 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+143 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:177:18)
+143 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:135:10)
+143 silly fetchPackageMetaData     at TCP.onread (net.js:542:20) code: 'ECONNRESET' }
+144 silly rollbackFailedOptional Starting
+145 silly rollbackFailedOptional Finishing
+146 silly runTopLevelLifecycles Starting
+147 silly runTopLevelLifecycles Finishing
+148 silly install printInstalled
+149 verbose stack Error: tunneling socket could not be established, statusCode=407
+149 verbose stack     at ClientRequest.onConnect (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
+149 verbose stack     at ClientRequest.g (events.js:286:16)
+149 verbose stack     at emitThree (events.js:116:13)
+149 verbose stack     at ClientRequest.emit (events.js:194:7)
+149 verbose stack     at Socket.socketOnData (_http_client.js:393:11)
+149 verbose stack     at emitOne (events.js:96:13)
+149 verbose stack     at Socket.emit (events.js:188:7)
+149 verbose stack     at readableAddChunk (_stream_readable.js:177:18)
+149 verbose stack     at Socket.Readable.push (_stream_readable.js:135:10)
+149 verbose stack     at TCP.onread (net.js:542:20)
+150 verbose cwd C:\Projects\OrientXpress
+151 error Windows_NT 10.0.10240
+152 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "@angular/core" "@angular/compiler" "@angular/common" "@angular/platform-browser" "@angular/platform-browser-dynamic" "rxjs@5.0.0-beta.6" "zone.js@0.6.12"
+153 error node v6.3.0
+154 error npm  v3.10.3
+155 error code ECONNRESET
+156 error network tunneling socket could not be established, statusCode=407
+157 error network This is most likely not a problem with npm itself
+157 error network and is related to network connectivity.
+157 error network In most cases you are behind a proxy or have bad network settings.
+157 error network
+157 error network If you are behind a proxy, please make sure that the
+157 error network 'proxy' config is set properly.  See: 'npm help config'
+158 verbose exit [ 1, true ]
